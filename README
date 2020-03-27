@@ -2,8 +2,8 @@
 https://github.com/ros-perception/opencv_apps
 RESGATANDO APENAS O ARQUIVO coord_converter.py NA PASTA src/opencv_apps_folder/scripts
 
-***DEVE-SE CRIAR TAMBÉM OUTRO WORKSPACE CATKIN, POIS DELETEI SEM QUERER O ARQUIVO CMakeList DA PASTA src DESSE WORKSPACE
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+***DEVE-SE CRIAR TAMBÉM OUTRO WORKSPACE CATKIN, POIS DELETEI SEM QUERER O ARQUIVO CMakeLists.txt DA PASTA src DESSE WORKSPACE
+---------------------------------------------------------------------------------------------------------------------------------------
 
 Démonstration du fonctionnement par video: https://drive.google.com/file/d/13XB4NPyIh6L3n2fTeJLDxKvlqvYWdX0y/view?usp=sharing
 
