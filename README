@@ -1,0 +1,12 @@
+Démonstration du fonctionnement par video: https://drive.google.com/file/d/13XB4NPyIh6L3n2fTeJLDxKvlqvYWdX0y/view?usp=sharing
+
+Le code coord_converter.py vise à trouver les coordonnées x_world et y_world de chaque cercle détecté en utilisant les équations décrites au début du script, en commentaire.
+C'était donc nécessaire de trouver les variables des équations :
+
+   - x_image et y_image ont été obtenues en lançant hough_circles.launch du projet opencv_apps en lui passant comme image la topique camera1/camera_raw. Avec un subscribe de la topique hough_circles/circles j'obtiens les coordonnées du centre de chaque cercle détecté par rapport à l'origine de l'image ;
+   - c_x, c_y, f_x et f_y sont les paramètres de calibrage de la caméra (la distance focale et le point principal), essentiels pour la conversion des coordonnées. Ils ont été trouvés en créant une instance de PinholeCameraModel que j'ai appelée camera_model. Cette instance me donne les paramètres de calibrage de la caméra souhaités, il me suffit de lui passer les informations de ma caméra. Ces informations ont été obtenues avec un subscribe de la topique camera1/camera_info ;
+   - z_world est la hauteur de la tige verticale de la caméra (1.25) trouvé dans le fichier .xacro qui la décrit. Dans ce fichier, j'ai également retrouvé la position de la caméra dans le monde : 1.4 et 2.2.
+
+Pour afficher les coordonnées des cercles sur les axes du monde, j'ai utilisé le résultat du calcul de la conversion plus la position de l'origine de l'image dans le monde (0,0 de l'image = 1.4,2.6 du monde). Cette valeur a été trouvée en repositionnant l'un des cercles qui était sur la table au point de l'origine de l'image et en prenant ses coordonnées dans le fichier .world. Je crois que cette technique n'est pas très précise, mais les résultats m'ont semblé cohérents.
+
+La plus grande difficulté c'était d'aligner les axes x et y du monde avec les axes de l'image. Pour le faire, j'ai repositionné la caméra de sorte que le x de l'image soit dans le même sens que le x du monde. Par contre, l'axe y de l'image reste dans le sens opposé de l'axe y du monde, j'ai donc ajouté un signe négatif au résultat final de y_world.

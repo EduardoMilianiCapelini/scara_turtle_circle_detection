@@ -1,0 +1,2 @@
+opencv_apps
+-DCATKIN_DEVEL_PREFIX=/home/tp/catkin_try/devel -DCMAKE_INSTALL_PREFIX=/home/tp/catkin_try/install -G Unix Makefiles

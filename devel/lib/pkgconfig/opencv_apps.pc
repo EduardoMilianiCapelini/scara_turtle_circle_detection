@@ -1,0 +1,8 @@
+prefix=/home/tp/catkin_try/devel
+
+Name: opencv_apps
+Description: Description of opencv_apps
+Version: 2.0.1
+Cflags: -I/home/tp/catkin_try/devel/include -I/home/tp/catkin_try/src/opencv_apps/include
+Libs: -L/home/tp/catkin_try/devel/lib -lopencv_apps
+Requires: message_runtime sensor_msgs std_msgs
