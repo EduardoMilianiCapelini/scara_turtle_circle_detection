@@ -1,3 +1,10 @@
+***OPENCV_APPS_FOLDER ESTÁ INCOMPLETO! PARA UTILIZÁ-LO NESSE PROJETO DEVE-SE SUBSTITUÍ-LO POR
+https://github.com/ros-perception/opencv_apps
+RESGATANDO APENAS O ARQUIVO coord_converter.py NA PASTA src/opencv_apps_folder/scripts
+
+***DEVE-SE CRIAR TAMBÉM OUTRO WORKSPACE CATKIN, POIS DELETEI SEM QUERER O ARQUIVO CMakeList DA PASTA src DESSE WORKSPACE
+
+
 Démonstration du fonctionnement par video: https://drive.google.com/file/d/13XB4NPyIh6L3n2fTeJLDxKvlqvYWdX0y/view?usp=sharing
 
 Le code coord_converter.py vise à trouver les coordonnées x_world et y_world de chaque cercle détecté en utilisant les équations décrites au début du script, en commentaire.
