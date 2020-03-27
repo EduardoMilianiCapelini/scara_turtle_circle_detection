@@ -3,6 +3,12 @@ https://github.com/ros-perception/opencv_apps
 RESGATANDO APENAS O ARQUIVO coord_converter.py NA PASTA src/opencv_apps_folder/scripts
 
 ***DEVE-SE CRIAR TAMBÉM OUTRO WORKSPACE CATKIN, POIS DELETEI SEM QUERER O ARQUIVO CMakeLists.txt DA PASTA src DESSE WORKSPACE
+
+***PORTANTO, PARA LANÇAR ESSE PROJETO, DEVE-SE:
+*CRIAR UM CATKIN WORKSPACE
+*FAZER O DOWNLOAD DO PROJETO opencv_apps E COLOCÁ-LO NA PASTA src
+*SALVAR O ARQUIVO coord_converter.py NA PASTA scripts DO PROJETO opencv_apps QUE ACABAMOS DE BAIXAR E LANÇÁ-LO APÓS TER LANÇADO O turtlescara_world.launch DO OUTRO PROJETO.
+*VISUALIZAR O VÍDEO DO LINK DO GOOGLE DRIVE ABAIXO PARA MELHOR COMPREENSÃO
 ---------------------------------------------------------------------------------------------------------------------------------------
 
 Démonstration du fonctionnement par video: https://drive.google.com/file/d/13XB4NPyIh6L3n2fTeJLDxKvlqvYWdX0y/view?usp=sharing
